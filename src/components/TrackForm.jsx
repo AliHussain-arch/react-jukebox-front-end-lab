@@ -55,7 +55,7 @@ const TrackForm = ({ index, setTracks, create, update, setUpdate, updateTrack, s
   if (update) {
     return (
       <>
-        <h1>Update {update}</h1>
+        <h1>Update</h1>
         <form onSubmit={handleFormSubmit}>
           <div className="formInput">
             <label htmlFor="artist">Update Artist </label>

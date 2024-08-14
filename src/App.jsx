@@ -2,6 +2,7 @@ import TrackList from "./components/TrackList";
 import { index, create, updateTrack, deleteTrack } from "./services/trackService";
 import { useEffect, useState } from "react";
 import TrackForm from "./components/TrackForm";
+import NowPlaying from "./components/NowPlaying";
 
 const App = () => {
   const [tracks, setTracks] = useState([]);
@@ -34,7 +35,6 @@ const App = () => {
           setUpdate={setUpdate} 
           updateTrack={updateTrack}
           setformDisplay={setformDisplay}
-          setPlay={setPlay}
         />
       ) : null}
       <TrackList 
@@ -43,8 +43,10 @@ const App = () => {
         tracks={tracks} 
         deleteTrack={deleteTrack} 
         setUpdate={setUpdate} 
-        setformDisplay={setformDisplay} 
+        setformDisplay={setformDisplay}
+        setPlay={setPlay} 
       />
+      {play ? <NowPlaying tracks={tracks} play={play}/> : null}
     </>
   );
 };
