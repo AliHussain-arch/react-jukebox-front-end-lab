@@ -27,7 +27,8 @@ const TrackForm = ({ index, setTracks, create, update, setUpdate, updateTrack, s
       <>
         <form onSubmit={handleFormSubmit}>
           <div className="formInput">
-            <label htmlFor="artist">Artist </label>
+            <label htmlFor="artist" style={{ color: '#FFFFFF' }}>Artist </label> 
+
             <input
               type="text"
               name="artist"
@@ -37,7 +38,7 @@ const TrackForm = ({ index, setTracks, create, update, setUpdate, updateTrack, s
             />
           </div>
           <div className="formInput">
-            <label htmlFor="title">Track </label>
+            <label htmlFor="title" style={{ color: '#FFFFFF' }}>Track </label>
             <input
               type="text"
               name="title"
@@ -58,7 +59,7 @@ const TrackForm = ({ index, setTracks, create, update, setUpdate, updateTrack, s
         <h1>Update</h1>
         <form onSubmit={handleFormSubmit}>
           <div className="formInput">
-            <label htmlFor="artist">Update Artist </label>
+            <label htmlFor="artist" style={{ color: '#FFFFFF' }}>Update Artist </label>
             <input
               type="text"
               name="artist"
@@ -68,7 +69,7 @@ const TrackForm = ({ index, setTracks, create, update, setUpdate, updateTrack, s
             />
           </div>
           <div className="formInput">
-            <label htmlFor="title">Update Track </label>
+            <label htmlFor="title" style={{ color: '#FFFFFF' }}>Update Track </label>
             <input
               type="text"
               name="title"
