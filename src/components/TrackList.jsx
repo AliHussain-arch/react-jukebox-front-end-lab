@@ -9,7 +9,7 @@ const TrackList = ({ index, setTracks, tracks, deleteTrack, setUpdate, setformDi
     <ul>
       {tracks.map((track) => (
         <li key={track._id}>
-          <div className="trackHeader">{track.title} by <span className="trackArtist">{track.artist}</span></div>
+          <div className="trackHeader">{track.title} by <span className="trackArtist" style={{ color: '#FF8C00' }}>{track.artist}</span></div>
           <div className="trackControls">
             <button onClick={() => {setPlay(track._id); updateOnClick}}>Play</button> 
              <button onClick={() => { setUpdate(track._id); setformDisplay(true); updateOnClick(); }}>Edit</button>
