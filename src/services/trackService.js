@@ -49,7 +49,6 @@ const deleteTrack = async (trackId) => {
       method: 'DELETE',
     });
     if (!res.ok) throw new Error('Failed to delete track.');
-    console.log('service: ', res);
     return res.json();
   } catch (error) {
     console.log(error);
