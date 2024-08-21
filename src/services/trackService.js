@@ -47,7 +47,7 @@ const deleteTrack = async (trackId) => {
   try {
     const res = await fetch(`${BASE_URL}/${trackId}`, {
       method: 'DELETE',
-    });
+          });
     if (!res.ok) throw new Error('Failed to delete track.');
     return res.json();
   } catch (error) {
